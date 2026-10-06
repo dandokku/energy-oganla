@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, ArrowUpRight } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -35,14 +35,14 @@ export default function Header() {
       {/* Mobile-only Menu Trigger Button */}
       <button
         className="menu-button"
-        onClick={() => setMenuOpen(!menuOpen)}
+        onClick={() => setMenuOpen(true)}
         aria-expanded={menuOpen}
-        aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+        aria-label="Open menu"
       >
         <Menu />
       </button>
 
-      {/* Hero Wordmark (Centered) */}
+      {/* Hero Wordmark (Centered on Desktop and Mobile) */}
       <a
         className="hero-wordmark"
         href="#top"
@@ -52,100 +52,59 @@ export default function Header() {
         ENERGY<br />OGANLA
       </a>
 
-      {/* Backdrop overlay for mobile drawer */}
+      {/* Simple Clean Red Mobile Menu Drawer */}
       <div
-        className={`mobile-nav-backdrop ${menuOpen ? 'open' : ''}`}
-        onClick={close}
-        aria-hidden={!menuOpen}
-      />
-
-      {/* Mobile slide-in drawer */}
-      <nav
-        className={`mobile-nav-drawer ${menuOpen ? 'open' : ''}`}
-        aria-label="Mobile navigation"
+        className={`simple-mobile-menu ${menuOpen ? 'open' : ''}`}
         aria-hidden={!menuOpen}
       >
-        {/* Drawer Header */}
-        <div className="mobile-nav-header">
-          <div className="mobile-nav-brand-badge">
-            <span className="brand-badge-dot" />
-            <span className="brand-badge-text">ENERGY OGANLA</span>
-          </div>
-          <button
-            className="mobile-nav-close-button"
-            onClick={close}
-            aria-label="Close navigation menu"
-          >
-            <X size={20} />
-          </button>
-        </div>
+        {/* Close Button */}
+        <button
+          className="simple-menu-close"
+          onClick={close}
+          aria-label="Close menu"
+        >
+          <X size={32} />
+        </button>
 
-        {/* Navigation Items */}
-        <div className="mobile-nav-list">
-          <a href="#about" onClick={close} className="mobile-nav-item">
-            <span className="mobile-nav-num">01</span>
-            <span className="mobile-nav-label">ABOUT</span>
-            <ArrowUpRight className="mobile-nav-icon" size={22} />
+        {/* Minimal Navigation Links */}
+        <nav className="simple-menu-nav" aria-label="Mobile navigation">
+          <a href="#about" onClick={close} className="simple-nav-link">
+            ABOUT
           </a>
-          <a href="#work" onClick={close} className="mobile-nav-item">
-            <span className="mobile-nav-num">02</span>
-            <span className="mobile-nav-label">WORK</span>
-            <ArrowUpRight className="mobile-nav-icon" size={22} />
+          <a href="#work" onClick={close} className="simple-nav-link">
+            WORK
           </a>
-          <a href="#faq" onClick={close} className="mobile-nav-item">
-            <span className="mobile-nav-num">03</span>
-            <span className="mobile-nav-label">FAQ</span>
-            <ArrowUpRight className="mobile-nav-icon" size={22} />
+          <a href="#faq" onClick={close} className="simple-nav-link">
+            FAQ
           </a>
-          <a href="#contact" onClick={close} className="mobile-nav-item">
-            <span className="mobile-nav-num">04</span>
-            <span className="mobile-nav-label">CONTACT</span>
-            <ArrowUpRight className="mobile-nav-icon" size={22} />
+          <a href="#contact" onClick={close} className="simple-nav-link">
+            CONTACT
           </a>
-        </div>
+        </nav>
 
-        {/* Drawer Footer */}
-        <div className="mobile-nav-footer">
+        {/* Minimal Footer */}
+        <div className="simple-menu-footer">
           <a
-            href="#contact"
-            onClick={close}
-            className="mobile-nav-cta"
+            href="https://www.instagram.com/energyoganla?stkn=bTExdG0wY2djZWxz&utm_source=qr"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            WORK WITH ME
+            Instagram
           </a>
-
-          <div className="mobile-nav-social-row">
-            <a
-              href="https://www.instagram.com/energyoganla?stkn=bTExdG0wY2djZWxz&utm_source=qr"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="mobile-nav-social-link"
-            >
-              Instagram
-            </a>
-            <span className="social-divider">•</span>
-            <a
-              href="https://x.com/energyoganla?s=11"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="mobile-nav-social-link"
-            >
-              X (Twitter)
-            </a>
-            <span className="social-divider">•</span>
-            <a
-              href="mailto:WorkwithOganla@gmail.com"
-              className="mobile-nav-social-link"
-            >
-              Email
-            </a>
-          </div>
-
-          <div className="mobile-nav-subtext">
-            Creative Strategy & Operations
-          </div>
+          <span>•</span>
+          <a
+            href="https://x.com/energyoganla?s=11"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            X
+          </a>
+          <span>•</span>
+          <a href="mailto:WorkwithOganla@gmail.com">
+            Email
+          </a>
         </div>
-      </nav>
+      </div>
     </header>
   )
 }
