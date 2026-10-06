@@ -4,14 +4,14 @@ export default function Testimonials() {
   return (
     <section className="testimonials-section" id="testimonials">
       <div className="testimonials-container">
-        <div className="testimonials-header">
+        <div className="testimonials-header reveal">
           <div className="section-label-testimonials">03 / Kind words</div>
           <h2 className="testimonials-headline">
             What collaborators say.
           </h2>
         </div>
 
-        <div className="testimonials-grid">
+        <div className="testimonials-grid reveal-stagger">
           {testimonials.map((item) => (
             <article className="testimonial-card" key={item.id}>
               <div className="testimonial-quote-mark" aria-hidden="true">

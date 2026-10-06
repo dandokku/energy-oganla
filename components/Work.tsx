@@ -24,7 +24,7 @@ export default function Work() {
       <section className="work-editorial-section" id="work">
         <div className="work-editorial-container">
           {/* Section Eyebrow & Headline */}
-          <div className="work-editorial-header">
+          <div className="work-editorial-header reveal">
             <div className="section-label-editorial">02 / Selected work</div>
             <h2 className="work-editorial-headline">
               My work happens in projects.
@@ -35,7 +35,7 @@ export default function Work() {
           <div className="work-editorial-list">
             {projects.map((project, idx) => (
               <article
-                className={`project-editorial-item ${idx % 2 === 1 ? 'reverse-spread' : ''}`}
+                className={`project-editorial-item reveal ${idx % 2 === 1 ? 'reverse-spread' : ''}`}
                 key={project.id}
               >
                 {/* Left / Narrative Content */}
@@ -50,7 +50,7 @@ export default function Work() {
                     ))}
                   </div>
 
-                  {/* Interactive Triggers matching the original prompt & mockups */}
+                  {/* Interactive Triggers */}
                   <div className="project-editorial-actions">
                     <button
                       type="button"

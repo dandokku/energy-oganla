@@ -4,19 +4,19 @@ import { contactInfo } from '@/data/portfolio'
 export default function Contact() {
   return (
     <section className="contact" id="contact">
-      <div className="section-label">05 / Let&apos;s talk</div>
-      <h2>Have a lot going on?</h2>
-      <p>
+      <div className="section-label reveal">05 / Let&apos;s talk</div>
+      <h2 className="reveal">Have a lot going on?</h2>
+      <p className="reveal">
         Tell me about it. I&apos;d love to hear what you&apos;re building and where I can help.
       </p>
 
-      <div className="contact-main-action">
+      <div className="contact-main-action reveal">
         <a className="button dark" href={`mailto:${contactInfo.email}`}>
           Start a conversation <ArrowUpRight data-icon="inline-end" size={16} />
         </a>
       </div>
 
-      <div className="contact-channels-list">
+      <div className="contact-channels-list reveal-stagger">
         <a
           href={`mailto:${contactInfo.email}`}
           className="contact-channel-card"

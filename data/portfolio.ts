@@ -258,7 +258,7 @@ export const projects: Project[] = [
       'Helping turn a witty, unconventional collection of Nigerian short stories into a campaign people would notice, connect with and remember.',
     description: [
       'Chimamaka had written a witty, unconventional collection of Nigerian short stories and was ready to launch it. What she didn’t yet have was a clear strategy for turning the finished manuscript into a campaign people would notice, connect with and remember.',
-      'I came in to help shape that strategy — from clarifying the audience and building anticipation to coordinating ARC outreach, managing launch details and keeping the entire process moving.',
+      'I came in to help shape that strategy, from clarifying the audience and building anticipation to coordinating ARC outreach, managing launch details and keeping the entire process moving.',
       'Together, we transformed a promising book with scattered launch ideas into a structured, personality-filled campaign that gave the project direction, built reader interest and helped Chimamaka feel supported throughout the launch.',
       'How’s Breakfast Faring? is a collection of 20 witty, whimsical and absurdist Nigerian short stories across genres like drama, sci-fi, satire, romance and absurdism. The goal wasn’t simply to “sell a book”; it was to help people understand what made this book worth their attention.',
     ],
@@ -307,7 +307,7 @@ export const projects: Project[] = [
         headline: 'I built the ARC strategy.',
         body: [
           'One of the biggest things I pushed for was getting the book into people’s hands before launch day. We identified relevant readers, creators, influencers and public figures who could genuinely connect with the book’s themes. I helped structure the outreach, refine the messaging and coordinate the Advanced Reader Copies.',
-          'We didn’t stop at “please review my book.” Where appropriate, I pushed for different forms of social proof — written reviews, video reviews, excerpts and conversations that could continue giving the book visibility after launch.',
+          'We didn’t stop at “please review my book.” Where appropriate, I pushed for different forms of social proof, including written reviews, video reviews, excerpts and conversations that could continue giving the book visibility after launch.',
           'The goal wasn’t just to get people to read the book. It was to create evidence that other people were reading it and enjoying it.',
         ],
         tags: ['Influencer outreach', 'ARC distribution', 'Review gathering', 'Quote extraction'],
@@ -348,7 +348,7 @@ export const projects: Project[] = [
         ],
         tags: ['Content direction', 'Pre-launch strategy', 'ARC outreach', 'Launch management', 'Reader engagement'],
         quote: {
-          text: 'She gave me rest and a sense of direction —',
+          text: 'She gave me rest and a sense of direction,',
           highlight: 'and kept me accountable throughout the launch.',
           author: 'Author Testimonial',
         },
@@ -419,8 +419,14 @@ export const projects: Project[] = [
     media: [
       {
         src: '/assets/streetchurch1.jpeg',
-        alt: 'StreetChurch on-camera recording session',
-        caption: 'Hosting live conversational segments and media junkets.',
+        alt: '',
+        caption: '',
+        tag: '',
+      },
+      {
+        src: '/assets/streetchurch2.jpeg',
+        alt: '',
+        caption: '',
         tag: '',
       },
     ],

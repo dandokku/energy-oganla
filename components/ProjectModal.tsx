@@ -162,7 +162,7 @@ export default function ProjectModal({
                     <p className="quote-highlight">{activeSection.quote.highlight}</p>
                   )}
                   {activeSection.quote.author && (
-                    <span className="quote-author">— {activeSection.quote.author}</span>
+                    <span className="quote-author">By {activeSection.quote.author}</span>
                   )}
                 </div>
               )}

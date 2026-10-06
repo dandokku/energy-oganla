@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <section className="intro section" id="about">
+    <section className="intro section reveal" id="about">
       <div className="section-label">01 / A little context</div>
       <div className="intro-content">
         <h2>Hi there!</h2>
-        <div>
+        <div className="reveal-stagger">
           <p>
             I’m Allison Favour Ifeoluwa, publicly known as “Energy Oganla” which means the boss of Energy. You’ll find out why I’m called that soon enough.
           </p>

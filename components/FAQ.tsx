@@ -3,10 +3,10 @@ import { answers } from '@/data/portfolio'
 export default function FAQ() {
   return (
     <section className="faq section" id="faq">
-      <div className="section-label">04 / Frequently asked</div>
+      <div className="section-label reveal">04 / Frequently asked</div>
       <div className="faq-layout">
-        <h2>Some useful answers.</h2>
-        <div>
+        <h2 className="reveal">Some useful answers.</h2>
+        <div className="reveal-stagger">
           {answers.map(([question, answer], index) => {
             const num = String(index + 1).padStart(2, '0')
             return (
