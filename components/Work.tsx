@@ -68,7 +68,20 @@ export default function Work() {
                       Media
                     </button>
 
-                    {project.externalLink && (
+                    {project.externalLinks?.map((link) => (
+                      <a
+                        key={link.url}
+                        className="editorial-action-link"
+                        href={link.url}
+                        target={link.url.startsWith('https://') ? '_blank' : undefined}
+                        rel={link.url.startsWith('https://') ? 'noreferrer' : undefined}
+                      >
+                        <span>{link.label}</span>
+                        <ArrowUpRight size={15} />
+                      </a>
+                    ))}
+
+                    {!project.externalLinks?.length && project.externalLink && (
                       <a
                         className="editorial-action-link"
                         href={project.externalLink}

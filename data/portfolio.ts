@@ -26,6 +26,11 @@ export interface ProjectMediaItem {
   tag?: string
 }
 
+export interface ProjectExternalLink {
+  label: string
+  url: string
+}
+
 export interface Project {
   id: string
   number: string
@@ -38,6 +43,7 @@ export interface Project {
   galleryPreview?: string[]
   sections: ProjectSection[]
   media: ProjectMediaItem[]
+  externalLinks?: ProjectExternalLink[]
   externalLink?: string
 }
 
@@ -229,7 +235,7 @@ export const projects: Project[] = [
       {
         src: '/assets/startup-showcase3.jpeg',
         alt: 'The Startup Showcase board',
-        caption: 'The event board used to keep the showcase on track.',
+        caption: 'Startup showcase board by me to steer community engagement',
         tag: '',
       },
       {
@@ -249,68 +255,95 @@ export const projects: Project[] = [
       'Helping turn a witty, unconventional collection of Nigerian short stories into a campaign people would notice, connect with and remember.',
     description: [
       'Chimamaka had written a witty, unconventional collection of Nigerian short stories and was ready to launch it. What she didn’t yet have was a clear strategy for turning the finished manuscript into a campaign people would notice, connect with and remember.',
-      'I came in to help shape that strategy, from clarifying the audience and building anticipation to coordinating ARC outreach, managing launch details and keeping the entire process moving.',
+      'I came in to help shape that strategy — from clarifying the audience and building anticipation to coordinating ARC outreach, managing launch details and keeping the entire process moving.',
+      'Together, we transformed a promising book with scattered launch ideas into a structured, personality-filled campaign that gave the project direction, built reader interest and helped Chimamaka feel supported throughout the launch.',
+      'How’s Breakfast Faring? is a collection of 20 witty, whimsical and absurdist Nigerian short stories across genres like drama, sci-fi, satire, romance and absurdism. The goal wasn’t simply to “sell a book”; it was to help people understand what made this book worth their attention.',
     ],
-    primaryImage: '/assets/playground-portrait-1.png',
-    secondaryImage: '/assets/playground-workspace-3.png',
+    primaryImage: '/assets/breakfast-faring1.jpeg',
+    secondaryImage: '/assets/breakfast-faring2.jpeg',
     galleryPreview: [
-      '/assets/playground-portrait-1.png',
-      '/assets/playground-workspace-3.png',
+      '/assets/breakfast-faring1.jpeg',
+      '/assets/breakfast-faring2.jpeg',
+      '/assets/breakfast-faring3.jpeg',
     ],
-    externalLink: '#contact',
+    externalLinks: [
+      {
+        label: 'Instagram Reel',
+        url: 'https://www.instagram.com/reel/DcyFF9hOLu-/?stkn=bWxtZmxwZ2FjbmFy',
+      },
+      {
+        label: 'Instagram post',
+        url: 'https://www.instagram.com/p/DdRAa0miLSi/?stkn=MTA4cGtiNXRlaXV2dQ==',
+      },
+    ],
     sections: [
       {
         id: 'the-book',
         tabLabel: 'The book',
-        headline: 'Understanding the voice, audience and essence.',
+        headline: 'I started by getting into the book itself.',
         body: [
-          'How\'s Breakfast Faring? is a collection of 20 witty, whimsical and absurdist Nigerian short stories across drama, sci-fi, satire, romance and absurdism.',
-          'I started by immersing myself in the tone to craft marketing materials that felt authentically hilarious and relatable.',
+          'Before creating a content strategy, I wanted to understand the voice, audience and purpose behind the work. I asked: Who is actually supposed to read this? Where do they discover books? Why should they care? What makes this book different? What do we want people to feel before they even read it? Where are we selling it? What does a successful launch look like?',
+          'That gave us a clearer audience: young Nigerian and Gen-Z readers who enjoy fun, distinctly Nigerian stories, whether or not they consider themselves “serious readers.”',
         ],
         tags: ['Literary marketing', 'Voice discovery', 'Target reader personas', 'Theme breakdowns'],
       },
       {
         id: 'the-story',
         tabLabel: 'The story',
-        headline: 'Turning a product release into a cultural conversation.',
+        headline: 'I turned the launch into a story.',
         body: [
-          'I turned the launch into a story: playful polls, Nigerian nostalgia, cultural references, conversational videos, carousels and gradual reveals.',
-          'Readers weren\'t just seeing promotional posts; they were actively debating themes and eagerly anticipating chapters.',
+          'Instead of immediately saying, “Hey guys, How’s Breakfast Faring? is coming!”, I wanted to create curiosity first. I started with playful polls such as, “What do you think I’m about to launch?” with options like a short film, a book or 💍.',
+          'From there, the content gradually revealed more about the project. The idea was simple: don’t give the audience the whole story at once. Give them reasons to keep watching.',
+          'I explored soft-launch content, Nigerian nostalgia, cultural references, conversational videos, polls, carousels and, eventually, content that spoke directly about the book’s themes.',
         ],
         tags: ['Content hooks', 'Nostalgia marketing', 'Interactive polls', 'Video reels', 'Carousels'],
       },
       {
         id: 'arc-strategy',
         tabLabel: 'ARC strategy',
-        headline: 'Generating social proof before day one.',
+        headline: 'I built the ARC strategy.',
         body: [
-          'I identified readers, creators, influencers and public figures who could genuinely connect with the themes, then structured outreach, personalized messaging and review cycles.',
-          'The goal was to create undeniable momentum and real reader praise ahead of the official release.',
+          'One of the biggest things I pushed for was getting the book into people’s hands before launch day. We identified relevant readers, creators, influencers and public figures who could genuinely connect with the book’s themes. I helped structure the outreach, refine the messaging and coordinate the Advanced Reader Copies.',
+          'We didn’t stop at “please review my book.” Where appropriate, I pushed for different forms of social proof — written reviews, video reviews, excerpts and conversations that could continue giving the book visibility after launch.',
+          'The goal wasn’t just to get people to read the book. It was to create evidence that other people were reading it and enjoying it.',
         ],
         tags: ['Influencer outreach', 'ARC distribution', 'Review gathering', 'Quote extraction'],
         quote: {
-          text: 'Social proof is not accidental.',
-          highlight: 'It is engineered through thoughtful early access.',
+          text: 'The goal wasn’t just to get people to read the book.',
+          highlight: 'It was to show that people were reading it and enjoying it.',
         },
       },
       {
         id: 'launch-management',
-        tabLabel: 'Launch management',
-        headline: 'Daily tracking and relentless follow-through.',
+        tabLabel: 'Launch',
+        headline: 'Then came launch management.',
         body: [
-          'I tracked outstanding tasks, coordinated assets, checked ARC access, and supported launch communication.',
-          'Constantly asking: What\'s pending? Who needs to be contacted? What needs to go out? What happens next?',
+          'As launch got closer, my role became much bigger than content. I tracked what needed to happen, followed up on outstanding tasks, coordinated content, checked ARC access, helped with launch communication and reminders, supported the virtual launch and kept an eye on the things that are easy to forget when you’re the person publishing a book.',
+          'There were plenty of “Allison, we need to do this TODAY” moments. 😂 So I kept asking: What’s pending? Who needs to be contacted? What needs to go out? What are we waiting for? What happens next?',
         ],
         tags: ['Timeline management', 'Asset delivery', 'Checklists', 'Launch-day sprint'],
       },
       {
+        id: 'the-voice',
+        tabLabel: 'The voice',
+        headline: 'I wanted the marketing to feel like the book.',
+        body: [
+          'The book is playful and unconventional, so I didn’t want the marketing to feel like a stiff literary campaign.',
+          'We experimented with curiosity, nostalgia, humour, cultural references, book themes, ARC reactions, launch content, reviews and continued promotion.',
+          'Even when we used simple carousel posts, the goal was to make them feel conversational rather than overly promotional. The content needed to feel like something you’d actually stop scrolling for.',
+        ],
+        tags: ['Curiosity', 'Nostalgia', 'Humour', 'Cultural references', 'Conversational content'],
+      },
+      {
         id: 'the-result',
         tabLabel: 'The result',
-        headline: 'From scattered ideas to sold-out momentum.',
+        headline: 'From “I have this book” to a structured launch.',
         body: [
-          'A project that began with "I have this book, I just don\'t know the strategy" became a structured campaign with clear pre-launch hype, 50+ early pre-orders in days, and continuous reader engagement.',
+          'I took a project that started with, “Energy, I have this book. I know what I can do. I just don’t know the strategy,” and turned it into a structured launch campaign with a content direction, pre-launch strategy, ARC outreach, launch communication, post-launch content and ongoing reader engagement.',
+          'And perhaps the best validation came from the author herself. She described having me on the project as a relief, saying I gave her “rest and a sense of direction” and kept her accountable throughout the launch.',
+          'Her words summed up my role pretty well: marketer, content strategist, executive assistant and, occasionally, professional pesterer. 😂',
         ],
-        tags: ['50+ First-week sales', 'Viral engagement', '100% On-time delivery'],
+        tags: ['Content direction', 'Pre-launch strategy', 'ARC outreach', 'Launch management', 'Reader engagement'],
         quote: {
           text: 'She gave me rest and a sense of direction —',
           highlight: 'and kept me accountable throughout the launch.',
@@ -320,16 +353,22 @@ export const projects: Project[] = [
     ],
     media: [
       {
-        src: '/assets/playground-portrait-1.png',
-        alt: 'Author and launch materials',
-        caption: 'Author spotlight and promotional visual campaign assets.',
-        tag: 'Campaign',
+        src: '/assets/breakfast-faring1.jpeg',
+        alt: 'Book Cover',
+        caption: 'Cover of How’s Breakfast Faring?',
+        tag: '',
       },
       {
-        src: '/assets/playground-workspace-3.png',
-        alt: 'Social media planning workspace',
-        caption: 'Content calendar, ARC distribution tracker, and reader quote repository.',
-        tag: 'Strategy',
+        src: '/assets/breakfast-faring2.jpeg',
+        alt: 'Media planning workspace',
+        caption: 'Media planning workspace for the book campaign.',
+        tag: '',
+      },
+      {
+        src: '/assets/breakfast-faring3.jpeg',
+        alt: 'Launch event setup',
+        caption: 'Setup for the How’s Breakfast Faring? launch event.',
+        tag: '',
       },
     ],
   },
@@ -401,13 +440,13 @@ export const projects: Project[] = [
         src: '/assets/playground-event-4.png',
         alt: 'StreetChurch on-camera recording session',
         caption: 'Hosting live conversational segments and media junkets.',
-        tag: 'Live Media',
+        tag: '',
       },
       {
         src: '/assets/playground-gathering-2.png',
         alt: 'Team collaborative brainstorm',
         caption: 'Weekly content development sessions shaping upcoming interview themes.',
-        tag: 'Production',
+        tag: '',
       },
     ],
   },
