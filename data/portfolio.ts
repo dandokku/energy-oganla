@@ -369,77 +369,47 @@ export const projects: Project[] = [
   {
     id: 'streetchurch',
     number: '003',
-    title: 'StreetChurch: Media, Interviews & Operations',
+    title: 'StreetChurch',
     role: 'Assistant Content Lead → Interviewer',
     summary:
-      'Contributing ideas, developing questions and creating conversations that felt natural rather than scripted.',
+      'Contributing content ideas, developing interview concepts and questions, and bringing engaging conversations to life on camera.',
     description: [
-      'I worked with the content team to brainstorm ideas that made StreetChurch\'s content deeply engaging, particularly involving real people and unfiltered conversations.',
-      'I also conducted on-camera interviews during media junkets, asking thoughtful, unexpected questions that brought out authentic answers.',
+      'My role at StreetChurch was mainly focused on contributing content ideas and helping bring some of them to life. I worked with the content team to brainstorm ideas that could make StreetChurch’s content more engaging, particularly content involving real people and conversations.',
+      'I helped develop interview questions and concepts, interviewed people for different pieces of content, and represented StreetChurch on camera when needed. I also interviewed actors during movie media junkets, thinking on my feet, asking engaging questions and creating conversations that felt natural rather than overly scripted.',
+      'It was a focused role that gave me hands-on experience in content ideation, interviewing, audience engagement and working as part of a creative team.',
     ],
-    primaryImage: '/assets/playground-event-4.png',
-    secondaryImage: '/assets/playground-gathering-2.png',
+    primaryImage: '/assets/streetchurch1.jpeg',
     galleryPreview: [
-      '/assets/playground-event-4.png',
-      '/assets/playground-gathering-2.png',
+      '/assets/streetchurch1.jpeg',
     ],
-    externalLink: '#contact',
+    externalLinks: [
+      {
+        label: 'Content 1',
+        url: 'https://www.instagram.com/reel/DIREJVVsQdY/?stkn=aHBrcDN0YTVxbjF1',
+      },
+      {
+        label: 'Content 2',
+        url: 'https://www.instagram.com/reel/DHtID8GtdNT/?stkn=MWc5OXY4MDlxbzZ0ag==',
+      },
+    ],
     sections: [
       {
-        id: 'ideation',
-        tabLabel: 'Ideation',
-        headline: 'Developing concepts rooted in real human curiosity.',
+        id: 'my-contribution',
+        tabLabel: 'My contribution',
+        headline: 'Content ideas, interviews and bringing them to life.',
         body: [
-          'Brainstormed fresh formats that resonated with modern culture and faith intersections.',
-          'Pioneered conversational concepts where participants felt seen and heard without rigid rehearsing.',
+          'I worked with the content team to brainstorm ideas that could make StreetChurch’s content more engaging, especially content built around real people and conversations.',
+          'I helped develop interview concepts and questions, interviewed people for different pieces of content, and represented StreetChurch on camera when needed. Interviewing actors during movie media junkets pushed me to think on my feet and create conversations that felt natural rather than overly scripted.',
+          'It was a relatively focused role, but it gave me hands-on experience in content ideation, interviewing, audience engagement and working as part of a creative team.',
         ],
-        tags: ['Creative brainstorming', 'Format development', 'Audience engagement', 'Cultural hooks'],
-      },
-      {
-        id: 'question-development',
-        tabLabel: 'Question design',
-        headline: 'Asking the questions nobody else thought to ask.',
-        body: [
-          'Crafted question flows that moved beyond generic PR talking points.',
-          'Researched interviewees extensively to discover quirky details and meaningful topics.',
-        ],
-        tags: ['Deep research', 'Interview scripts', 'Angle testing', 'Conversational design'],
-      },
-      {
-        id: 'on-camera',
-        tabLabel: 'On-camera interviews',
-        headline: 'Thinking on my feet under bright studio lights.',
-        body: [
-          'Interviewed actors, creatives, and guests during fast-paced media junkets.',
-          'Maintained high energy, active listening, and spontaneous humor to draw out genuine emotion.',
-        ],
-        tags: ['Media junkets', 'Live hosting', 'Active listening', 'Spontaneous moderation'],
-        quote: {
-          text: 'Great interviews happen',
-          highlight: 'when the speaker forgets the camera is rolling.',
-        },
-      },
-      {
-        id: 'execution',
-        tabLabel: 'Execution & post',
-        headline: 'From raw footage to viral social hooks.',
-        body: [
-          'Collaborated with editors on selecting the most impactful snippets, timestamps, and captions for digital distribution.',
-        ],
-        tags: ['Timestamp curation', 'Social cuts', 'Caption strategy', 'Review loops'],
+        tags: ['Content ideation', 'Interview concepts', 'Question development', 'On-camera interviews', 'Content execution'],
       },
     ],
     media: [
       {
-        src: '/assets/playground-event-4.png',
+        src: '/assets/streetchurch1.jpeg',
         alt: 'StreetChurch on-camera recording session',
         caption: 'Hosting live conversational segments and media junkets.',
-        tag: '',
-      },
-      {
-        src: '/assets/playground-gathering-2.png',
-        alt: 'Team collaborative brainstorm',
-        caption: 'Weekly content development sessions shaping upcoming interview themes.',
         tag: '',
       },
     ],
