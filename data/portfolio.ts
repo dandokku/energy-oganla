@@ -79,15 +79,16 @@ export const projects: Project[] = [
     description: [
       'Startup Showcase was an event bringing founders, creatives, investors and other members of the startup ecosystem into one room. I came on as the Executive Assistant / Project Manager, helping turn a growing list of ideas, vendors, venue options, logistics and deadlines into an actual event plan',
     ],
-    primaryImage: '/assets/playground-gathering-2.png',
-    secondaryImage: '/assets/playground-portrait-1.png',
+    primaryImage: '/assets/startup-showcase1.jpeg',
+    secondaryImage: '/assets/startup-showcase2.jpeg',
     galleryPreview: [
       '/assets/startup-showcase1.jpeg',
       '/assets/startup-showcase2.jpeg',
       '/assets/startup-showcase3.jpeg',
       '/assets/startup-showcase4.jpeg',
     ],
-    externalLink: '#contact',
+    externalLink:
+      'https://www.linkedin.com/posts/african-impact-initiative_africanimpactchallenge-africanimpactchallenge-activity-7505672245558579202-EQXJ?utm_medium=ios_app&rcm=ACoAAF68xBABvEooKvX4liCAHR4W26i-Z9wCj5k&utm_source=social_share_send&utm_campaign=copy_link',
     sections: [
       {
         id: 'the-plan',
@@ -113,8 +114,8 @@ export const projects: Project[] = [
           text: 'Because "we need to organise an event" is not a task.',
           highlight: "It's about 30 tasks wearing a trench coat.",
         },
-        image: '/assets/startup-showcase1.jpeg',
-        imageCaption: 'Operations roadmap & multi-track execution board.',
+        image: '/assets/startup-showcase3.jpeg',
+        imageCaption: 'The Startup Showcase event board.',
       },
       {
         id: 'venue',
@@ -138,7 +139,7 @@ export const projects: Project[] = [
           'Food',
           'Accessibility',
         ],
-        image: '/assets/playground-gathering-2.png',
+        image: '/assets/startup-showcase1.jpeg',
         imageCaption: 'On-site spatial validation and seating configuration.',
       },
       {
@@ -180,7 +181,7 @@ export const projects: Project[] = [
           'I wasn’t just thinking, “Where can we put a logo?” I was thinking about what people should see when they walk in, how the space should feel and how to make the branding intentional instead of putting banners everywhere.',
         ],
         tags: ['Spatial design', 'Wayfinding', 'Welcome desk', 'Brand touchpoints', 'Attendee journey'],
-        image: '/assets/playground-portrait-1.png',
+        image: '/assets/startup-showcase2.jpeg',
         imageCaption: 'Branded welcome desk and experiential guest checkpoints.',
       },
       {
@@ -222,28 +223,28 @@ export const projects: Project[] = [
     ],
     media: [
       {
-        src: '/assets/playground-gathering-2.png',
-        alt: 'Startup Showcase group photo & discussions',
-        caption: 'Founders and ecosystem leaders gathered in active discussion during the showcase.',
+        src: '/assets/startup-showcase1.jpeg',
+        alt: 'Startup Showcase group photo',
+        caption: 'Founders and guests together at the Startup Showcase.',
         tag: 'Community',
       },
       {
-        src: '/assets/playground-portrait-1.png',
+        src: '/assets/startup-showcase2.jpeg',
         alt: 'At the welcome desk and coordination hub',
-        caption: 'Managing attendee onboarding, vendor drop-offs, and speaker schedules.',
+        caption: 'The welcome desk at the Startup Showcase.',
         tag: 'Operations',
       },
       {
-        src: '/assets/playground-event-4.png',
-        alt: 'Stage presentation and speaker spotlight',
-        caption: 'Seamless stage management and AV coordination during founder presentations.',
-        tag: 'Keynote',
+        src: '/assets/startup-showcase3.jpeg',
+        alt: 'The Startup Showcase board',
+        caption: 'The event board used to keep the showcase on track.',
+        tag: 'Backstage',
       },
       {
-        src: '/assets/playground-workspace-3.png',
-        alt: 'Behind the scenes coordination workspace',
-        caption: 'Live timeline monitoring and instant communication hub for the operations team.',
-        tag: 'Backstage',
+        src: '/assets/startup-showcase4.jpeg',
+        alt: 'On stage at the Startup Showcase',
+        caption: 'A speaker on stage at the Startup Showcase.',
+        tag: 'Keynote',
       },
     ],
   },

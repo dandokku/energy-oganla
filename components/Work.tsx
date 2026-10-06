@@ -72,8 +72,10 @@ export default function Work() {
                       <a
                         className="editorial-action-link"
                         href={project.externalLink}
+                        target={project.externalLink.startsWith('https://') ? '_blank' : undefined}
+                        rel={project.externalLink.startsWith('https://') ? 'noreferrer' : undefined}
                       >
-                        <span>Story</span>
+                        <span>{project.id === 'startup-showcase' ? 'Event link' : 'Story'}</span>
                         <ArrowUpRight size={15} />
                       </a>
                     )}
