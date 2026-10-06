@@ -41,6 +41,14 @@ export interface Project {
   externalLink?: string
 }
 
+export interface Testimonial {
+  id: string
+  quote: string | string[]
+  author: string
+  role: string
+  organization?: string
+}
+
 export type FAQAnswer = [question: string, answer: string]
 
 export const gallery: GalleryImage[] = [
@@ -429,4 +437,27 @@ export const answers: FAQAnswer[] = [
     'What kind of work are you open to?',
     'Executive support, project management, operations and content or marketing work for thoughtful teams doing meaningful things.',
   ],
+]
+
+export const testimonials: Testimonial[] = [
+  {
+    id: 'charles-isidi',
+    quote:
+      '“I really loved your ability to take on everything with a meticulousness, I saw how you were resourceful and your ability to leverage your existing community to deliver excellently. I wouldn’t have been able to execute this project without your help. Well done”',
+    author: 'Charles Isidi',
+    role: 'Marketing & Growth',
+    organization: 'African Impact Initiative',
+  },
+  {
+    id: 'chimamaka-adeniyi',
+    quote: [
+      '“Allison, I can\'t even lie, having you as the marketer for How\'s Breakfast Faring has been such a relief right from the beginning. I\'m so glad I hired you before I started anything. One thing I can do is paniccc, and having you doing all the strategy and arranging and accountability gave me rest and a sense of direction for this book launch.',
+      'You were basically the marketer, the content strategist, and the executive assistant all in one. I allowed myself rest and think of other things because you were there to keep tabs on all the efforts. I love that you have been very organized, innovative with the content ideas, and very active. Like, active.',
+      'I could recommend you a thousand times for anyone in need of an assistant in any capacity because you will indeed get shit done. 7am oh, 12am oh, I\'m receiving a text from Allison. At some point I was low key annoyed with how much you would pester me to meet up 😭, but I needed it like madd if not we wouldn\'t have achieved so much.',
+      'You pushed me to do things I wouldn\'t normally have done just because I dey do \'I don\'t wanna inconvenience...I don\'t wanna look as if\' omoo, now I know to carry my thing on my head lol. I genuinely am very grateful for your guidance through this launch period. I don\'t regret a single thing. Thanks for working with me!”',
+    ],
+    author: 'Chimamaka Adeniyi',
+    role: 'Author of ‘How’s Breakfast Faring’',
+    organization: 'Poet & writer',
+  },
 ]
