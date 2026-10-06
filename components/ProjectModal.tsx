@@ -167,17 +167,6 @@ export default function ProjectModal({
                 </div>
               )}
 
-              {/* Embedded Section Photography */}
-              {activeSection.image && (
-                <div className="project-section-image-frame">
-                  <img src={activeSection.image} alt={activeSection.headline} />
-                  {activeSection.imageCaption && (
-                    <span className="section-image-caption">
-                      {activeSection.imageCaption}
-                    </span>
-                  )}
-                </div>
-              )}
             </div>
           ) : isMediaActive && project.media ? (
             <div className="project-media-gallery">

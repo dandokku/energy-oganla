@@ -10,7 +10,7 @@
   --red: #ec1d05;
   --green: #78bd68;
   --yellow: #f4c62d;
-  --modal-bg: #140d0b;
+  --modal-bg: #ec1d05;
 }
 
 @theme inline {
@@ -61,14 +61,14 @@ button { font: inherit; }
 .section { padding: 115px 7vw; max-width: 1240px; margin: auto; }
 .section-label { color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
 .intro-content, .faq-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 9vw; padding-top: 70px; }
-.intro h2, .faq h2 { max-width: 8ch; margin: 0; font-size: clamp(3rem, 6vw, 6.4rem); line-height: .9; letter-spacing: -.09em; }
+.intro h2, .faq h2 { max-width: 8ch; margin: 0; font-size: clamp(3rem, 6vw, 6.4rem); line-height: .9; letter-spacing: -.09em; font-weight: 600; }
 .intro-content p { max-width: 570px; margin: 0 0 24px; font-size: clamp(1.35rem, 2.5vw, 2.1rem); line-height: 1.17; }
 .intro-content p + p { color: var(--muted); font-size: 1.05rem; line-height: 1.4; max-width: 470px; }
 .text-link { display: inline-flex; align-items: center; gap: 7px; border-bottom: 1px solid currentColor; padding-bottom: 4px; font-size: .9rem; font-weight: 700; }
 .text-link svg { width: 16px; }
 
 /* =========================================================
-   EDITORIAL WORK SECTION (MAGAZINE SPREAD / RICH IMAGERY)
+   EDITORIAL WORK SECTION (SEMI-BOLD HEADERS & BIG ENERGY FONT)
    ========================================================= */
 
 .work-editorial-section {
@@ -89,15 +89,16 @@ button { font: inherit; }
   border-top: 1px solid rgba(255, 255, 255, 0.35);
   padding-top: 16px;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.02em;
 }
 .work-editorial-headline {
   margin: 35px 0 0 0;
   font-size: clamp(3.2rem, 8vw, 7.5rem);
-  font-weight: 900;
+  font-weight: 600;
   line-height: 0.88;
   letter-spacing: -0.09em;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -129,7 +130,7 @@ button { font: inherit; }
 .project-editorial-num {
   color: var(--yellow);
   font-size: clamp(1.2rem, 2vw, 1.6rem);
-  font-weight: 850;
+  font-weight: 600;
   letter-spacing: 0.02em;
   margin-bottom: 14px;
 }
@@ -137,9 +138,10 @@ button { font: inherit; }
 .project-editorial-title {
   margin: 0 0 24px 0;
   font-size: clamp(2.2rem, 4.5vw, 4.2rem);
-  font-weight: 900;
-  line-height: 0.95;
-  letter-spacing: -0.06em;
+  font-weight: 600;
+  line-height: 0.92;
+  letter-spacing: -0.08em;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -171,8 +173,8 @@ button { font: inherit; }
   padding: 0;
   cursor: pointer;
   font-size: clamp(1.15rem, 2vw, 1.45rem);
-  font-weight: 850;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.04em;
   color: var(--yellow);
   text-decoration: underline;
   text-underline-offset: 6px;
@@ -193,7 +195,7 @@ button { font: inherit; }
   align-items: center;
   gap: 4px;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   border-bottom: 1.5px solid currentColor;
   padding-bottom: 2px;
   transition: color 0.15s ease;
@@ -243,7 +245,7 @@ button { font: inherit; }
 .editorial-view-prompt {
   color: var(--yellow);
   font-size: 0.9rem;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -0.01em;
 }
 
@@ -276,7 +278,7 @@ button { font: inherit; }
   backdrop-filter: blur(6px);
   color: var(--yellow);
   font-size: 0.72rem;
-  font-weight: 800;
+  font-weight: 600;
   padding: 3px 8px;
   border-radius: 999px;
   display: inline-flex;
@@ -287,7 +289,7 @@ button { font: inherit; }
 
 /* Statement Section */
 .statement { background: var(--yellow); color: var(--ink); padding: 130px 10vw; }
-.statement p { max-width: 920px; margin: auto; font-size: clamp(2.7rem, 6vw, 6.4rem); line-height: .94; letter-spacing: -.09em; }
+.statement p { max-width: 920px; margin: auto; font-size: clamp(2.7rem, 6vw, 6.4rem); line-height: .94; letter-spacing: -.09em; font-weight: 600; }
 .statement em { color: var(--red); font-style: normal; }
 
 /* FAQ Section */
@@ -301,9 +303,9 @@ button { font: inherit; }
 /* Contact Section */
 .contact { background: var(--red); color: white; padding: 115px 7vw 130px; text-align: center; }
 .contact .section-label { max-width: 1240px; margin: auto; border-color: rgba(255,255,255,.4); color: rgba(255,255,255,.78); text-align: left; }
-.contact h2 { margin: 75px auto 20px; font-size: clamp(4rem, 11vw, 12rem); line-height: .8; letter-spacing: -.1em; }
+.contact h2 { margin: 75px auto 20px; font-size: clamp(4rem, 11vw, 12rem); line-height: .8; letter-spacing: -.1em; font-weight: 600; }
 .contact p { max-width: 360px; margin: 0 auto 30px; font-size: 1.25rem; line-height: 1.35; }
-.button { display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; padding: 15px 22px; font-size: .9rem; font-weight: 700; }
+.button { display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; padding: 15px 22px; font-size: .9rem; font-weight: 600; }
 .button svg { width: 16px; }
 .dark { background: var(--ink); color: var(--cream); }
 
@@ -319,7 +321,7 @@ footer small { color: #aaa69b; }
 @keyframes modalSlideUp { from { opacity: 0; transform: translateY(20px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
 
 /* =========================================================
-   PROJECT MODAL / CASE STUDY VIEWER (EXACT BRAND DESIGN)
+   PROJECT MODAL / CASE STUDY VIEWER (SEMI-BOLD HEADERS & BIG ENERGY FONT)
    ========================================================= */
 
 .project-modal-backdrop {
@@ -330,7 +332,7 @@ footer small { color: #aaa69b; }
   align-items: center;
   justify-content: center;
   padding: 24px 16px;
-  background: rgba(10, 6, 5, 0.88);
+  background: rgba(10, 6, 5, 0.85);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   animation: modalFadeIn 0.25s ease-out;
@@ -338,11 +340,11 @@ footer small { color: #aaa69b; }
 
 .project-modal-container {
   background: var(--modal-bg);
-  color: var(--cream);
-  border: 1px solid rgba(244, 198, 45, 0.25);
+  color: white;
+  border: 1px solid rgba(244, 198, 45, 0.35);
   border-radius: 24px;
-  box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.8), 0 0 40px rgba(244, 198, 45, 0.08);
-  max-width: 980px;
+  box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.8), 0 0 40px rgba(244, 198, 45, 0.12);
+  max-width: 1020px;
   width: 100%;
   max-height: 92vh;
   display: flex;
@@ -355,14 +357,15 @@ footer small { color: #aaa69b; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 32px 16px;
+  padding: 24px 36px 14px;
 }
 
 .project-modal-eyebrow {
   color: var(--yellow);
   font-size: 1.15rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .project-modal-close-btn {
@@ -371,7 +374,7 @@ footer small { color: #aaa69b; }
   border: none;
   border-radius: 999px;
   padding: 10px 24px;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
   display: inline-flex;
@@ -386,13 +389,14 @@ footer small { color: #aaa69b; }
 }
 
 .project-modal-title-area {
-  padding: 0 32px 14px;
+  padding: 0 36px 14px;
 }
 .project-modal-headline {
-  font-size: clamp(2.4rem, 6vw, 4.8rem);
-  font-weight: 900;
-  line-height: 0.92;
-  letter-spacing: -0.06em;
+  font-size: clamp(2.6rem, 6.5vw, 5.2rem);
+  font-weight: 600;
+  line-height: 0.88;
+  letter-spacing: -0.09em;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--yellow);
   margin: 0;
 }
@@ -401,7 +405,7 @@ footer small { color: #aaa69b; }
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding: 18px 32px 24px;
+  padding: 16px 36px 24px;
 }
 
 .project-tab-pill {
@@ -411,8 +415,9 @@ footer small { color: #aaa69b; }
   border-radius: 999px;
   padding: 10px 22px;
   font-size: 1.05rem;
-  font-weight: 750;
-  letter-spacing: -0.02em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   display: inline-flex;
@@ -420,14 +425,14 @@ footer small { color: #aaa69b; }
   gap: 6px;
 }
 .project-tab-pill:hover {
-  background: rgba(244, 198, 45, 0.15);
+  background: rgba(244, 198, 45, 0.18);
   transform: translateY(-1px);
 }
 .project-tab-pill.active {
   background: var(--yellow);
   color: #140d0b;
   border-color: var(--yellow);
-  box-shadow: 0 4px 14px rgba(244, 198, 45, 0.35);
+  box-shadow: 0 4px 16px rgba(244, 198, 45, 0.4);
   transform: translateY(-1px);
 }
 .project-tab-pill.media-pill {
@@ -438,29 +443,30 @@ footer small { color: #aaa69b; }
 .project-modal-body {
   flex: 1;
   overflow-y: auto;
-  padding: 0 32px 32px;
+  padding: 0 36px 36px;
   scrollbar-width: thin;
-  scrollbar-color: rgba(244, 198, 45, 0.3) transparent;
+  scrollbar-color: rgba(244, 198, 45, 0.4) transparent;
 }
 
 .project-section-headline {
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 850;
-  line-height: 1.02;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 600;
+  line-height: 0.92;
+  letter-spacing: -0.08em;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--yellow);
-  margin: 10px 0 24px 0;
+  margin: 12px 0 24px 0;
 }
 
 .project-section-text {
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
-  line-height: 1.5;
-  color: #f7f1e6;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.45;
+  color: white;
   margin-bottom: 28px;
 }
 .project-section-text p {
   margin: 0 0 18px 0;
-  max-width: 840px;
+  max-width: 860px;
 }
 .project-section-text p:last-child {
   margin-bottom: 0;
@@ -474,18 +480,19 @@ footer small { color: #aaa69b; }
 }
 .project-micro-pill {
   background: transparent;
-  border: 1.5px solid rgba(244, 198, 45, 0.45);
+  border: 1.5px solid rgba(244, 198, 45, 0.65);
   color: var(--yellow);
   border-radius: 999px;
   padding: 8px 18px;
   font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-family: Arial, Helvetica, sans-serif;
   transition: all 0.15s ease;
 }
 .project-micro-pill:hover {
   border-color: var(--yellow);
-  background: rgba(244, 198, 45, 0.12);
+  background: rgba(244, 198, 45, 0.15);
 }
 
 .project-quote-block {
@@ -494,25 +501,26 @@ footer small { color: #aaa69b; }
 .project-quote-block .quote-text {
   font-size: 1.35rem;
   line-height: 1.35;
-  color: #f7f1e6;
+  color: white;
   margin: 0 0 8px 0;
 }
 .project-quote-block .quote-highlight {
-  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
-  font-weight: 850;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
+  font-size: clamp(1.4rem, 2.5vw, 1.95rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.05em;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--yellow);
   margin: 6px 0;
 }
 .project-quote-block .quote-author {
   display: block;
   font-size: 0.85rem;
-  color: #a89f91;
+  color: rgba(255, 255, 255, 0.8);
   margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .project-section-image-frame {
@@ -520,30 +528,30 @@ footer small { color: #aaa69b; }
   border-radius: 16px;
   overflow: hidden;
   margin: 28px 0 10px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  max-width: 680px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  max-width: 720px;
   background: #000;
 }
 .project-section-image-frame img {
   width: 100%;
   height: auto;
-  max-height: 380px;
+  max-height: 400px;
   object-fit: cover;
   display: block;
 }
 .section-image-caption {
   display: block;
-  padding: 10px 14px;
+  padding: 10px 16px;
   background: rgba(20, 13, 11, 0.9);
-  color: #a89f91;
-  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.88rem;
   font-weight: 600;
 }
 
 /* Media Gallery View */
 .project-media-intro {
-  color: #a89f91;
-  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.15rem;
   margin: -10px 0 24px 0;
 }
 .project-media-grid {
@@ -552,15 +560,15 @@ footer small { color: #aaa69b; }
   gap: 20px;
 }
 .project-media-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
 .project-media-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(244, 198, 45, 0.3);
+  border-color: var(--yellow);
 }
 .project-media-frame {
   position: relative;
@@ -583,17 +591,17 @@ footer small { color: #aaa69b; }
   left: 12px;
   background: rgba(20, 14, 12, 0.85);
   backdrop-filter: blur(6px);
-  border: 1px solid rgba(244, 198, 45, 0.4);
+  border: 1px solid rgba(244, 198, 45, 0.5);
   color: var(--yellow);
   font-size: 0.72rem;
-  font-weight: 800;
+  font-weight: 600;
   padding: 3px 10px;
   border-radius: 999px;
 }
 .media-caption {
   padding: 14px 16px;
-  font-size: 0.88rem;
-  color: #c4bbb0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.4;
   margin: 0;
 }
@@ -603,36 +611,36 @@ footer small { color: #aaa69b; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 32px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(14, 9, 8, 0.8);
+  padding: 16px 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.15);
 }
 .modal-nav-step-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #f7f1e6;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  color: white;
   border-radius: 999px;
-  padding: 8px 18px;
-  font-size: 0.88rem;
-  font-weight: 700;
+  padding: 8px 20px;
+  font-size: 0.92rem;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 .modal-nav-step-btn:hover:not(:disabled) {
   border-color: var(--yellow);
   color: var(--yellow);
-  background: rgba(244, 198, 45, 0.12);
+  background: rgba(244, 198, 45, 0.15);
 }
 .modal-nav-step-btn:disabled {
   opacity: 0.35;
   cursor: not-allowed;
 }
 .modal-footer-status {
-  font-size: 0.85rem;
-  color: #8c857b;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 600;
 }
 
@@ -684,9 +692,9 @@ footer small { color: #aaa69b; }
   /* Modal Mobile */
   .project-modal-backdrop { padding: 12px; }
   .project-modal-container { max-height: 96vh; border-radius: 18px; }
-  .project-modal-header { padding: 16px 20px; }
+  .project-modal-header { padding: 18px 20px 10px; }
   .project-modal-title-area { padding: 0 20px 10px; }
-  .project-modal-pills-bar { padding: 12px 20px 16px; gap: 8px; }
+  .project-modal-pills-bar { padding: 10px 20px 16px; gap: 8px; }
   .project-tab-pill { padding: 8px 16px; font-size: 0.9rem; }
   .project-modal-body { padding: 0 20px 20px; }
   .project-modal-footer { padding: 12px 20px; }

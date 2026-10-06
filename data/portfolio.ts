@@ -17,8 +17,6 @@ export interface ProjectSection {
   body: string[]
   tags?: string[]
   quote?: ProjectSectionQuote
-  image?: string
-  imageCaption?: string
 }
 
 export interface ProjectMediaItem {
@@ -114,8 +112,6 @@ export const projects: Project[] = [
           text: 'Because "we need to organise an event" is not a task.',
           highlight: "It's about 30 tasks wearing a trench coat.",
         },
-        image: '/assets/startup-showcase3.jpeg',
-        imageCaption: 'The Startup Showcase event board.',
       },
       {
         id: 'venue',
@@ -139,8 +135,6 @@ export const projects: Project[] = [
           'Food',
           'Accessibility',
         ],
-        image: '/assets/startup-showcase1.jpeg',
-        imageCaption: 'On-site spatial validation and seating configuration.',
       },
       {
         id: 'money',
@@ -181,8 +175,6 @@ export const projects: Project[] = [
           'I wasn’t just thinking, “Where can we put a logo?” I was thinking about what people should see when they walk in, how the space should feel and how to make the branding intentional instead of putting banners everywhere.',
         ],
         tags: ['Spatial design', 'Wayfinding', 'Welcome desk', 'Brand touchpoints', 'Attendee journey'],
-        image: '/assets/startup-showcase2.jpeg',
-        imageCaption: 'Branded welcome desk and experiential guest checkpoints.',
       },
       {
         id: 'planning-ahead',
@@ -251,13 +243,13 @@ export const projects: Project[] = [
   {
     id: 'breakfast',
     number: '002',
-    title: 'How’s Breakfast Faring?: Book Launch & Campaign',
-    role: 'Book Marketing / Content Strategy / Launch Management',
+    title: 'How’s Breakfast Faring?',
+    role: 'Book Marketing • Content Strategy • Launch Management • Executive Assistance',
     summary:
-      'Building a personality-filled book launch campaign from scattered ideas to structured momentum.',
+      'Helping turn a witty, unconventional collection of Nigerian short stories into a campaign people would notice, connect with and remember.',
     description: [
-      'How\'s Breakfast Faring? is a collection of 20 witty, whimsical and absurdist Nigerian short stories across drama, sci-fi, satire, romance and absurdism.',
-      'I built a launch narrative, ran ARC (Advanced Reader Copy) distribution, and orchestrated a multi-week social and digital promotional campaign.',
+      'Chimamaka had written a witty, unconventional collection of Nigerian short stories and was ready to launch it. What she didn’t yet have was a clear strategy for turning the finished manuscript into a campaign people would notice, connect with and remember.',
+      'I came in to help shape that strategy, from clarifying the audience and building anticipation to coordinating ARC outreach, managing launch details and keeping the entire process moving.',
     ],
     primaryImage: '/assets/playground-portrait-1.png',
     secondaryImage: '/assets/playground-workspace-3.png',
