@@ -49,26 +49,26 @@ export interface Testimonial {
   organization?: string
 }
 
-export type FAQAnswer = [question: string, answer: string]
+export type FAQAnswer = [question: string, answer: string | string[]]
 
 export const gallery: GalleryImage[] = [
   {
-    src: '/assets/playground-portrait-1.png',
-    alt: 'Candid conversation in a bright red room',
+    src: '/assets/alison.jpeg',
+    alt: 'Alison',
     className: 'gallery-card card-one',
   },
   {
-    src: '/assets/playground-gathering-2.png',
-    alt: 'Creative team gathered around a table',
+    src: '/assets/energyoganla.jpeg',
+    alt: 'Energy Oganla',
     className: 'gallery-card card-two',
   },
   {
-    src: '/assets/playground-workspace-3.png',
+    src: '/assets/startup-showcase5.jpeg',
     alt: 'Colorful creative workspace',
     className: 'gallery-card card-three',
   },
   {
-    src: '/assets/playground-event-4.png',
+    src: '/assets/streetchurch2.jpeg',
     alt: 'Speaker sharing an idea at a lively event',
     className: 'gallery-card card-four',
   },
@@ -92,6 +92,7 @@ export const projects: Project[] = [
       '/assets/startup-showcase2.jpeg',
       '/assets/startup-showcase3.jpeg',
       '/assets/startup-showcase4.jpeg',
+      '/assets/startup-showcase5.jpeg',
     ],
     externalLink:
       'https://www.linkedin.com/posts/african-impact-initiative_africanimpactchallenge-africanimpactchallenge-activity-7505672245558579202-EQXJ?utm_medium=ios_app&rcm=ACoAAF68xBABvEooKvX4liCAHR4W26i-Z9wCj5k&utm_source=social_share_send&utm_campaign=copy_link',
@@ -387,8 +388,10 @@ export const projects: Project[] = [
       'It was a focused role that gave me hands-on experience in content ideation, interviewing, audience engagement and working as part of a creative team.',
     ],
     primaryImage: '/assets/streetchurch1.jpeg',
+    secondaryImage: '/assets/streetchurch2.jpeg',
     galleryPreview: [
       '/assets/streetchurch1.jpeg',
+      '/assets/streetchurch2.jpeg',
     ],
     externalLinks: [
       {
@@ -426,16 +429,19 @@ export const projects: Project[] = [
 
 export const answers: FAQAnswer[] = [
   [
-    'What do you actually do?',
-    'I bring order to ambitious work. That can mean running a project, managing the details around a founder, shaping content or making sure the plan survives contact with reality.',
+    'Why “EnergyOganla”?',
+    'Energy Oganla is the name that sums up the kind of person I am. I’m versatile. I love to put my strength into all my projects.',
   ],
   [
-    'How do you work?',
-    'Calmly, visibly and with a bias toward action. I turn vague requests into next steps, keep people aligned and flag the thing that might become a problem before it does.',
+    'What do you do?',
+    [
+      'I’m a Project & operations manager, Personal/ Executive Assistant to some. I’m also a creative, which means I handle Content strategy & media management.',
+      'Although they are unique and individual roles, I think they all work together.',
+    ],
   ],
   [
-    'What kind of work are you open to?',
-    'Executive support, project management, operations and content or marketing work for thoughtful teams doing meaningful things.',
+    '“How do we work together?”',
+    'Hit “Work with me?” and tell me what is on your plate. We will figure it out from there.',
   ],
 ]
 
@@ -460,4 +466,17 @@ export const testimonials: Testimonial[] = [
     role: 'Author of ‘How’s Breakfast Faring’',
     organization: 'Poet & writer',
   },
+  {
+    id: 'lightpen',
+    quote:
+      '“Working with you was a pleasant experience, being able to keep up with my spontaneity and schedule was something I truly appreciated. You demonstrated professionalism, reliability, and a willingness to learn throughout our time working together. Communication was clear, and you attended to every detail in my work. I particularly appreciated your hyper and energetic attitude and still being able to follow instructions while maintaining a good standard of work. I would recommend you to anyone looking for a dedicated and dependable Personal Assistant.”',
+    author: 'LightPen',
+    role: 'Personal Assistant Client',
+  },
 ]
+
+export const contactInfo = {
+  email: 'WorkwithOganla@gmail.com',
+  instagram: 'https://www.instagram.com/energyoganla?stkn=bTExdG0wY2djZWxz&utm_source=qr',
+  x: 'https://x.com/energyoganla?s=11',
+} as const

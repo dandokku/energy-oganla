@@ -5,7 +5,6 @@ import Work from '@/components/Work'
 import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
 
 export default function Page() {
   return (
@@ -17,7 +16,6 @@ export default function Page() {
       <Testimonials />
       <FAQ />
       <Contact />
-      <Footer />
     </main>
   )
 }
