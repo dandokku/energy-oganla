@@ -68,7 +68,7 @@ export const gallery: GalleryImage[] = [
     className: 'gallery-card card-three',
   },
   {
-    src: '/assets/streetchurch2.jpeg',
+    src: '/assets/alison2.jpeg',
     alt: 'Speaker sharing an idea at a lively event',
     className: 'gallery-card card-four',
   },
