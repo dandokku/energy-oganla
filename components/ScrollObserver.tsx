@@ -4,17 +4,9 @@ import { useEffect } from 'react'
 
 export default function ScrollObserver() {
   useEffect(() => {
-    // Check user preference for reduced motion
-    const prefersReducedMotion = window.matchMedia(
-      '(prefers-reduced-motion: reduce)'
-    ).matches
-
-    const revealElements = document.querySelectorAll('.reveal, .reveal-stagger')
-
-    if (prefersReducedMotion) {
-      revealElements.forEach((el) => el.classList.add('revealed'))
-      return
-    }
+    // Select all scroll reveal targets
+    const elements = document.querySelectorAll<HTMLElement>('.reveal, .reveal-stagger')
+    if (!elements.length) return
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -26,12 +18,21 @@ export default function ScrollObserver() {
         })
       },
       {
-        threshold: 0.12,
+        threshold: 0.05,
         rootMargin: '0px 0px -30px 0px',
       }
     )
 
-    revealElements.forEach((el) => observer.observe(el))
+    elements.forEach((el) => {
+      // Check if already in viewport
+      const rect = el.getBoundingClientRect()
+      const inView = rect.top < window.innerHeight - 30 && rect.bottom > 0
+      if (inView) {
+        el.classList.add('revealed')
+      } else {
+        observer.observe(el)
+      }
+    })
 
     return () => {
       observer.disconnect()
