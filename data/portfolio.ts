@@ -26,11 +26,6 @@ export interface ProjectMediaItem {
   tag?: string
 }
 
-export interface ProjectExternalLink {
-  label: string
-  url: string
-}
-
 export interface Project {
   id: string
   number: string
@@ -43,7 +38,6 @@ export interface Project {
   galleryPreview?: string[]
   sections: ProjectSection[]
   media: ProjectMediaItem[]
-  externalLinks?: ProjectExternalLink[]
   externalLink?: string
 }
 
@@ -266,16 +260,7 @@ export const projects: Project[] = [
       '/assets/breakfast-faring2.jpeg',
       '/assets/breakfast-faring3.jpeg',
     ],
-    externalLinks: [
-      {
-        label: 'Instagram Reel',
-        url: 'https://www.instagram.com/reel/DcyFF9hOLu-/?stkn=bWxtZmxwZ2FjbmFy',
-      },
-      {
-        label: 'Instagram post',
-        url: 'https://www.instagram.com/p/DdRAa0miLSi/?stkn=MTA4cGtiNXRlaXV2dQ==',
-      },
-    ],
+    externalLink: '#contact',
     sections: [
       {
         id: 'the-book',
@@ -355,19 +340,19 @@ export const projects: Project[] = [
       {
         src: '/assets/breakfast-faring1.jpeg',
         alt: 'Book Cover',
-        caption: 'Cover of How’s Breakfast Faring?',
+        caption: '',
         tag: '',
       },
       {
         src: '/assets/breakfast-faring2.jpeg',
-        alt: 'Media planning workspace',
-        caption: 'Media planning workspace for the book campaign.',
+        alt: ' Book Review',
+        caption: '',
         tag: '',
       },
       {
         src: '/assets/breakfast-faring3.jpeg',
-        alt: 'Launch event setup',
-        caption: 'Setup for the How’s Breakfast Faring? launch event.',
+        alt: 'Sales',
+        caption: '',
         tag: '',
       },
     ],
