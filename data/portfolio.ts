@@ -260,7 +260,16 @@ export const projects: Project[] = [
       '/assets/breakfast-faring2.jpeg',
       '/assets/breakfast-faring3.jpeg',
     ],
-    externalLink: '#contact',
+    externalLinks: [
+      {
+        label: 'Instagram Reel',
+        url: 'https://www.instagram.com/reel/DcyFF9hOLu-/?stkn=bWxtZmxwZ2FjbmFy',
+      },
+      {
+        label: 'Instagram post',
+        url: 'https://www.instagram.com/p/DdRAa0miLSi/?stkn=MTA4cGtiNXRlaXV2dQ==',
+      },
+    ],
     sections: [
       {
         id: 'the-book',
