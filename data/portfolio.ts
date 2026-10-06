@@ -77,15 +77,15 @@ export const projects: Project[] = [
     summary:
       'Startup Showcase was an event bringing founders, creatives, investors and other members of the startup ecosystem into one room.',
     description: [
-      'Startup Showcase was an event bringing founders, creatives, investors and other members of the startup ecosystem into one room.',
-      'I came on as the Executive Assistant / Project Manager, helping turn a growing list of ideas, vendors, venue options, logistics and deadlines into an actual event plan.',
+      'Startup Showcase was an event bringing founders, creatives, investors and other members of the startup ecosystem into one room. I came on as the Executive Assistant / Project Manager, helping turn a growing list of ideas, vendors, venue options, logistics and deadlines into an actual event plan',
     ],
     primaryImage: '/assets/playground-gathering-2.png',
     secondaryImage: '/assets/playground-portrait-1.png',
     galleryPreview: [
-      '/assets/playground-gathering-2.png',
-      '/assets/playground-portrait-1.png',
-      '/assets/playground-event-4.png',
+      '/assets/startup-showcase1.jpeg',
+      '/assets/startup-showcase2.jpeg',
+      '/assets/startup-showcase3.jpeg',
+      '/assets/startup-showcase4.jpeg',
     ],
     externalLink: '#contact',
     sections: [
@@ -94,8 +94,8 @@ export const projects: Project[] = [
         tabLabel: 'The plan',
         headline: 'First, I figured out what we actually needed.',
         body: [
-          'Before jumping into vendors and payments, I started breaking the event down into workable tracks.',
-          'I turned those moving parts into things we could actually research, assign, budget and execute without losing the high-level vision.',
+          'Before jumping into vendors and payments, I started breaking the event down: venue, branding, furniture, food, sound, screens, photography, speakers, guest experience and logistics.',
+          'I turned those moving parts into things we could actually research, assign, price and track.',
         ],
         tags: [
           'Venue',
@@ -113,7 +113,7 @@ export const projects: Project[] = [
           text: 'Because "we need to organise an event" is not a task.',
           highlight: "It's about 30 tasks wearing a trench coat.",
         },
-        image: '/assets/playground-workspace-3.png',
+        image: '/assets/startup-showcase1.jpeg',
         imageCaption: 'Operations roadmap & multi-track execution board.',
       },
       {
@@ -123,8 +123,8 @@ export const projects: Project[] = [
         body: [
           'We looked at multiple spaces before settling on one.',
           'I wasn’t only asking: "Does this venue look good?"',
-          'I was looking at what we would actually get for the money.',
-          'I also went physically to venues to check measurements and placement because some things simply cannot be solved from a WhatsApp photo.',
+          'I looked at what we would actually get for the money: capacity, space configuration, meeting rooms, branding opportunities, furniture, screens, projector quality, sound, food and accessibility.',
+          'I physically visited venues to check measurements and placement, because some things simply cannot be solved from a WhatsApp photo. That helped us make decisions based on the actual space rather than assumptions.',
         ],
         tags: [
           'Capacity',
@@ -144,34 +144,40 @@ export const projects: Project[] = [
       {
         id: 'money',
         tabLabel: 'Money',
-        headline: 'Tracking every penny and protecting the budget.',
+        headline: 'Getting things done without setting the budget on fire.',
         body: [
-          'I tracked invoices, approvals, changes, payments and receipts across branding, printing, carpentry, food, photography, sound and furniture.',
-          'I found better options where we could and flagged overspending before it became a bigger problem.',
+          'This was one of the biggest parts of the project. Invoices came in from different vendors, payments happened in stages and costs kept changing, so I tracked what we were paying for, what had been approved, invoice changes, payments and receipts.',
+          'I flagged that we were spending too much on logistics and looked for better deals, including a better option for the speaker chairs instead of accepting the first one available.',
+          'When branding and printing costs started stacking up, I worked through the budget to see what we could reduce.',
         ],
         tags: ['Budget tracking', 'Invoicing', 'Payment approvals', 'Cost negotiation', 'Receipt reconciliations'],
         quote: {
-          text: "Don't just have a conversation.",
-          highlight: 'Get the next step.',
+          text: 'Being an assistant isn’t just about getting things done.',
+          highlight: 'It’s about getting them done without casually setting the budget on fire.',
         },
       },
       {
         id: 'vendors',
         tabLabel: 'Vendors',
-        headline: 'Aligning partners and keeping quality uncompromising.',
+        headline: 'I made the vendors take accountability.',
         body: [
-          'Coordinated with vendors across multiple disciplines, maintaining clear briefs, delivery deadlines, and on-site expectations.',
-          'Having single-point accountability prevented the typical miscommunications between print shops, sound technicians, and catering teams.',
+          'There were people involved across branding, printing, carpentry, food, photography, sound, furniture and other event requirements. My approach was simple: don’t just have a conversation. Get the next step.',
+          'If we needed measurements, I arranged the site visit. If we needed an invoice, I requested it. If an invoice changed, I made sure the updated version was documented. If payment was pending, I followed up. If something needed clarification, I got the relevant person on a call.',
+          'I kept moving each requirement from “We need this” to “Here’s the vendor,” “Here’s the quote,” “Here’s what we’re paying” and finally, “It’s done.”',
         ],
         tags: ['Print & Signage', 'Carpentry', 'AV & Sound', 'Catering', 'Photography', 'Stage crew'],
+        quote: {
+          text: 'Don’t just have a conversation.',
+          highlight: 'Get the next step.',
+        },
       },
       {
         id: 'creative-direction',
         tabLabel: 'Creative direction',
-        headline: 'Making the physical space feel intentional.',
+        headline: 'I helped make it look and feel like our event.',
         body: [
-          'Alongside the design and branding team, I thought through how the event should feel in the physical space — from branded touchpoints to the welcome experience.',
-          'The goal was to make the atmosphere feel cohesive and memorable instead of just slapping banners on walls.',
+          'I worked alongside the design and branding team to think through how the event would show up in the physical space, from branding placements and printed materials to the overall visual direction.',
+          'I wasn’t just thinking, “Where can we put a logo?” I was thinking about what people should see when they walk in, how the space should feel and how to make the branding intentional instead of putting banners everywhere.',
         ],
         tags: ['Spatial design', 'Wayfinding', 'Welcome desk', 'Brand touchpoints', 'Attendee journey'],
         image: '/assets/playground-portrait-1.png',
@@ -180,10 +186,10 @@ export const projects: Project[] = [
       {
         id: 'planning-ahead',
         tabLabel: 'Planning ahead',
-        headline: 'Eliminating surprises before showtime.',
+        headline: 'I planned for things before they became problems.',
         body: [
-          'I checked the projector, confirmed laptop and connection details, and planned logistics before event day.',
-          '"We\'ll figure it out on the day" is a dangerous sentence in event management.',
+          'We didn’t just assume the presentation setup would work. I asked whose laptop we were using, how it connected to the screen, whether the projector actually worked and whether we should test it beforehand. I physically went to check the projector.',
+          'We also planned logistics ahead of time so there wouldn’t be surprises on event day.',
         ],
         tags: ['Tech rehearsals', 'AV testing', 'Contingency plans', 'Speaker briefings'],
         quote: {
@@ -194,20 +200,22 @@ export const projects: Project[] = [
       {
         id: 'paper-trail',
         tabLabel: 'Paper trail',
-        headline: 'When money and assets move, there must be a trail.',
+        headline: 'If money moves, there should be a trail.',
         body: [
-          'I created a central folder for invoices, contracts, and receipts and tracked pending and completed transactions.',
-          'Post-event audits and reporting were completely painless because every document was logged in real time.',
+          'I created a central folder for invoices and receipts and kept track of pending and completed payments.',
+          'That meant we could answer “How much did we spend?”, “Where’s the invoice?”, “Has this vendor been paid?” and “Do we have the receipt?” without searching through 400 WhatsApp messages.',
+          'Because the project involved external funding and spending that needed to be properly accounted for, documentation mattered just as much as execution.',
         ],
         tags: ['Centralized documentation', 'Contract archiving', 'Expense logs', 'Post-event reporting'],
       },
       {
         id: 'the-founder',
-        tabLabel: 'The founder',
-        headline: 'Keeping the leadership out of unnecessary chaos.',
+        tabLabel: 'Management',
+        headline: 'I kept the founder out of unnecessary chaos.',
         body: [
-          'My goal was to keep the founder focused on high-level impact and attendee relationships.',
-          'I brought structured options, price comparisons, and actionable next steps instead of handing over raw problems to solve.',
+          'My job wasn’t to make every decision myself. It was to make sure that when something reached the founder, it was as clear as possible.',
+          'Instead of “There’s an issue with the chairs,” I could say, “The venue chairs aren’t suitable. I found an alternative, here’s the price, and here’s what changes if we use them.” Instead of “We need branding,” I could share the vendor, what needed measuring, the quotation and what we were waiting on.',
+          'The goal was to reduce the number of things the founder had to personally chase.',
         ],
         tags: ['Executive shielding', 'Decision briefs', 'Daily briefings', 'Action items'],
       },
