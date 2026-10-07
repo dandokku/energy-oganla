@@ -247,6 +247,12 @@ export const projects: Project[] = [
         caption: 'A speaker on stage at the Startup Showcase.',
         tag: '',
       },
+      {
+        src: '/assets/startup-showcase5.jpeg',
+        alt: '',
+        caption: '',
+        tag: '',
+      },
     ],
   },
   {
