@@ -195,26 +195,26 @@ button { font: inherit; }
 .card-one {
   top: 14%;
   left: 3%;
-  animation: hero-card-in-1 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both, hero-float 7s ease-in-out 1.55s infinite;
+  animation: hero-card-in-1 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both, hero-float 3.4s ease-in-out 1.55s infinite;
 }
 .card-two {
   bottom: 9%;
   left: 4%;
   width: clamp(145px, 17vw, 260px);
   aspect-ratio: .78;
-  animation: hero-card-in-2 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both, hero-float 7s ease-in-out 1.75s infinite;
+  animation: hero-card-in-2 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both, hero-float 3.8s ease-in-out 1.75s infinite;
 }
 .card-three {
   top: 16%;
   right: 3%;
   width: clamp(145px, 17vw, 260px);
   aspect-ratio: .8;
-  animation: hero-card-in-3 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both, hero-float 7s ease-in-out 1.65s infinite;
+  animation: hero-card-in-3 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both, hero-float 3.2s ease-in-out 1.65s infinite;
 }
 .card-four {
   bottom: 9%;
   right: 4%;
-  animation: hero-card-in-4 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both, hero-float 7s ease-in-out 1.85s infinite;
+  animation: hero-card-in-4 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both, hero-float 4s ease-in-out 1.85s infinite;
 }
 
 @keyframes hero-card-in-1 {
@@ -271,11 +271,11 @@ button { font: inherit; }
 }
 .hero-button {
   display: inline-flex;
-  min-width: 286px;
+  min-width: 220px;
   justify-content: center;
   border-radius: 999px;
-  padding: 19px 28px;
-  font-size: 1.25rem;
+  padding: 14px 24px;
+  font-size: 1.05rem;
   font-weight: 800;
   letter-spacing: -.05em;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -295,6 +295,8 @@ button { font: inherit; }
 
 /* Common Section */
 .section { padding: 115px 7vw; max-width: 1240px; margin: auto; }
+.intro { max-width: none; background-color: #ffffff; }
+.intro > * { max-width: 1240px; margin-right: auto; margin-left: auto; }
 .section-label { color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
 .intro-content, .faq-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 9vw; padding-top: 70px; }
 .intro h2, .faq h2 { max-width: 8ch; margin: 0; font-size: clamp(3rem, 6vw, 6.4rem); line-height: .9; letter-spacing: -.09em; font-weight: 600; }
@@ -758,7 +760,7 @@ footer small { color: #aaa69b; }
 .site-footer .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 20px; }
 
 /* Keyframe animations */
-@keyframes hero-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -12px; } }
+@keyframes hero-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -36px; } }
 @keyframes hero-copy-in { from { opacity: 0; translate: 0 24px; } to { opacity: 1; translate: 0 0; } }
 @keyframes modalFadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes modalSlideUp { from { opacity: 0; transform: translateY(20px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
@@ -1129,10 +1131,10 @@ footer small { color: #aaa69b; }
   .hero-copy-playground h1 { margin-top: 15px; font-size: clamp(3.25rem, 14vw, 6rem); }
   .hero-copy-playground > p { font-size: 1.12rem; }
   .hero-actions { flex-direction: column; gap: 12px; margin-top: 30px; }
-  .gallery-card { width: 30vw; border-radius: 12px; }
+  .gallery-card { width: 40vw; border-radius: 12px; }
   .card-one { left: -4%; top: 12%; transform: rotate(-6deg); }
-  .card-two { left: -4%; bottom: 4%; width: 32vw; transform: rotate(5deg); }
-  .card-three { right: -4%; top: 14%; width: 32vw; transform: rotate(6deg); }
+  .card-two { left: -4%; bottom: 4%; width: 43vw; transform: rotate(5deg); }
+  .card-three { right: -4%; top: 14%; width: 43vw; transform: rotate(6deg); }
   .card-four { right: -4%; bottom: 4%; transform: rotate(-5deg); }
   .intro-content, .faq-layout { grid-template-columns: 1fr; gap: 45px; padding-top: 50px; }
   .intro h2, .faq h2 { max-width: none; }
@@ -1253,5 +1255,3 @@ footer small { color: #aaa69b; }
     transition: none !important;
   }
 }
-
-

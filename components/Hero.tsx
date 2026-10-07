@@ -24,7 +24,7 @@ export default function Hero() {
             Show Working!
           </a>
           <a className="hero-button hero-button-glass" href="#contact">
-            Work with me?
+            Work with me
           </a>
         </div>
       </div>

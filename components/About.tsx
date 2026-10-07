@@ -6,7 +6,7 @@ export default function About() {
         <h2 className="reveal">Hi there!</h2>
         <div className="reveal-stagger">
           <p>
-            I’m Allison Favour Ifeoluwa, publicly known as “Energy Oganla” which means the boss of Energy. You’ll find out why I’m called that soon enough.
+            I’m Allison Favour Ifeoluwa, publicly known as “Energy Oganla” which means the 'Boss of Energy'. You’ll find out why I’m called that soon enough.
           </p>
           <p>
             I’m a Creative Executive Assistant, Media &amp; Project Manager with 5+ years of experience working in the Media space alongside helping people who’ve got a lot on their plates figure things out.

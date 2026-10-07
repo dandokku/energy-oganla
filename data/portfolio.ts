@@ -63,7 +63,7 @@ export const gallery: GalleryImage[] = [
     className: 'gallery-card card-two',
   },
   {
-    src: '/assets/startup-showcase5.jpeg',
+    src: '/assets/energyoganla2.jpeg',
     alt: 'Colorful creative workspace',
     className: 'gallery-card card-three',
   },
@@ -358,19 +358,31 @@ export const projects: Project[] = [
       {
         src: '/assets/breakfast-faring1.jpeg',
         alt: 'Book Cover',
-        caption: '',
+        caption: 'Book Cover',
         tag: '',
       },
       {
         src: '/assets/breakfast-faring2.jpeg',
         alt: ' Book Review',
-        caption: '',
+        caption: 'Comment from a student outside our demographic who stumbled upon the book during its pre-launch stage.',
         tag: '',
       },
       {
         src: '/assets/breakfast-faring3.jpeg',
         alt: 'Sales',
-        caption: '',
+        caption: 'Sales made in less than two week of the Pre-launch',
+        tag: '',
+      },
+      {
+        src: '/assets/breakfast-faring4.jpeg',
+        alt: 'Sales',
+        caption: 'Sample of Content Calendar I created for this project.',
+        tag: '',
+      },
+      {
+        src: '/assets/breakfast-faring5.jpeg',
+        alt: 'Sales',
+        caption: 'Sample of Content Calendar I created for this project.',
         tag: '',
       },
     ],
